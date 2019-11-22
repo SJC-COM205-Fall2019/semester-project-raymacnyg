@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chase Elliott Home Page</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="page-container">
+  <header><img src="Images/header.jpg" width="900" height="372" alt=""/></header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html">Wins</a></li>
+      <li><a href="index.html">Stats</a></li>
+      <li><a href="index.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="intro">
+      <ul>
+        <li><img src="Images/chase_elliott_intro.jpg" width="300" height="163" alt=""/></li>
+        <li>
+          <h2>Chase Elliott</h2>
+        
+        <p>Chase Elliott is a professional NASCAR Driver with 4 years of experience in NASCAR's premier series, the Cup Series. He is one of the rising stars in NASCAR with a bright future.</p></li>
+      </ul>
+    </div>
+    <div class="about">
+      <ul>
+        <li>
+          <a href="index.html">
+          <h2>About</h2>
+        
+          <p>Learn all about the life and career of the driver of the Number 9, Chase Elliot, so far.</p>
+          <p>Go Now &gt;&gt;</p>
+	    </a></li>
+        <li><img src="Images/about-image.jpg" width="300" height="163" alt=""/></li>
+      </ul>
+    </div>
+    <div class="wins">
+      <ul>
+        <li><img src="Images/wins-image.jpg" width="300" height="163" alt=""/></li>
+        <li>
+          <a href="index.html">
+          <h2>Wins</h2>
+        
+          <p>Take a look at Chase Elliott's six(6) career wins in NASCAR's premier series.</p>
+          <p>Go Now &gt;&gt;</p>
+          </a>
+          <p>&nbsp;</p>
+		</li>
+      </ul>
+    </div>
+    <div class="stats">
+      <ul>
+        <li>
+          <a href="index.html">
+          <h2>Stats</h2>
+        
+          <p>Explore the career of Chase Elliott and make your own judgments on him by diving into the stats from his career so far.</p>
+          <p>Go Now &gt;&gt;</p>
+	    </a></li>
+        <li><img src="Images/stats-image.jpg" width="300" height="163" alt=""/></li>
+      </ul>
+    </div>
+    <div class="gallery">
+      <ul>
+        <li><img src="Images/gallery-image.jpg" width="300" height="163" alt=""/></li>
+        <li>
+          <a href="index.html">
+          <h2>Gallery</h2>
+        
+          <p>View images of paint schemes Chase Elliot has run in his time in the NASCAR Cup Series.</p>
+          <p>Go Now &gt;&gt;</p>
+	    </a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>Ray McNamara</p>
+    <p>COM 205 Fall 2019</p>
+    <p id = "date">Date</p>
+  </footer>
+</div>
+<script>
+window.onload = initDate;
+function initDate() {
+     var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
+     var monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+     var now = new Date();
+     var dtString = dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate();
+     document.getElementById("date"). innerHTML = dtString;
+}
+
+	
+	
+	
+	
+</script>
+</body>
+</html>

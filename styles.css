@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #003282;
+    line-height: 20px;
+    font-size: 14px;
+}
+nav {
+    background-color: #000DFF;
+    height: 50px;
+}
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+.intro {
+    margin: 0;
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+.intro ul {
+	padding: 0;
+    margin: 0;
+    list-style-type: none;
+	overflow: auto;
+}
+.intro ul li{
+    width: 435px;
+    float: left;
+    text-align: center;	
+}
+.about{
+    margin: 0;
+    padding: 15px;
+    background-color: #9E9E9E;
+}
+.about ul li a {
+    text-decoration: none;
+	display: block;
+	color: #000DFF;
+}
+.about ul li a:hover{
+    color: #CFCC00;
+}
+.about ul{
+	padding: 0;
+    margin: 0;
+    list-style-type: none;
+	overflow: auto;
+}
+.about ul li{
+    width: 435px;
+    float: left;
+    text-align: center;	
+}
+.wins{
+    margin: 0;
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+.wins ul{
+	padding: 0;
+    margin: 0;
+    list-style-type: none;
+	overflow: auto;
+}
+.wins ul li{
+    width: 435px;
+    float: left;
+    text-align: center;	
+}
+.wins ul li a{
+    text-decoration: none;
+	display: block;
+	color: #000DFF;
+}
+.wins ul li a:hover{
+    color: #CFCC00;
+}
+.stats{
+    margin: 0;
+    padding: 15px;
+    background-color: #9E9E9E;
+}
+.stats ul{
+	padding: 0;
+    margin: 0;
+    list-style-type: none;
+	overflow: auto;
+}
+.stats ul li{
+    width: 435px;
+    float: left;
+    text-align: center;	
+}
+.stats ul li a{
+    text-decoration: none;
+	display: block;
+	color: #000DFF;
+}
+.stats ul li a:hover{
+    color: #CFCC00;
+}
+.gallery{
+    margin: 0;
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+.gallery ul{
+	padding: 0;
+    margin: 0;
+    list-style-type: none;
+	overflow: auto;
+}
+.gallery ul li{
+    width: 435px;
+    float: left;
+    text-align: center;	
+}
+.gallery ul li a{
+    text-decoration: none;
+	display: block;
+	color: #000DFF;
+}
+.gallery ul li a:hover{
+    color: #CFCC00;
+}
+footer{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    padding: 12px 0;
+    border-top: 1px solid #000DFF;
+    clear: both;
+}
+
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+footer p {
+    margin: 0;
+	
+}
+
+nav ul li {
+    width: 176px;
+    float: left;
+    text-align: center;
+    border: 2px solid #CFCC00;
+}
+nav ul li a {
+    padding: 0;
+    display: block;
+    color: #CFCC00;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+
+
+
+.page-container {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 900px;
+}
+header {
+    margin: 0;
+    padding: 0;
+    height: 372px;
+}
