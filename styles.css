@@ -180,3 +180,31 @@ header {
     padding: 0;
     height: 372px;
 }
+main h1 {
+    border-bottom: 1px solid #000DFF;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-bottom: 15px;
+    margin-right: 15px;
+}
+
+p {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 16px;
+}
+.content_container {
+    margin: 15px;
+    text-align: left;
+}
+#prev {
+    display: inline;
+    padding-right: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    visibility: hidden;
+}
+#next {
+    position: static;
+    left: auto;
+    margin-left: 300px;
+}

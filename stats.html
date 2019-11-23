@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chase Elliott Stats Page</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="page-container">
+  <header><img src="Images/header.jpg" width="900" height="372" alt=""/></header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="wins.html">Wins</a></li>
+      <li><a href="stats.html">Stats</a></li>
+      <li><a href="index.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Stats</h1>
+    <div class="intro">
+      <ul>
+        <li><h2>2019</h2>
+		  <img src="Images/win-stickers.jpg" width="300" height="163" alt="3 win stickers"/></li>
+        <li>
+          <p>Wins: 3</p>
+          <p>Top 5's: 11</p>
+          <p>Top 10's: 15</p>
+          <p>Poles: 4</p>
+          <p>Laps Led: 601</p>
+          <p>Average Start: 10.89</p>
+          <p>Average Finish: 15.14</p>
+        </li>
+      </ul>
+    </div>
+    <div class="about">
+      <ul>
+        <li><p>Wins: 3</p>
+          <p>Top 5's: 11</p>
+          <p>Top 10's: 21</p>
+          <p>Poles: 1</p>
+          <p>Laps Led: 325</p>
+          <p>Average Start: 11.06</p>
+          <p>Average Finish: 12.25</p>
+	    </li>
+        <li><h2>2018</h2>
+		  <img src="Images/win-stickers2.jpg" width="300" height="163" alt="3 win stickers"/></li>
+      </ul>
+    </div>
+    <div class="wins">
+      <ul>
+        <li><h2>2017</h2></li>
+        <li>
+          <p>Wins: 0</p>
+          <p>Top 5's: 12</p>
+          <p>Top 10's: 21</p>
+          <p>Poles: 1</p>
+          <p>Laps Led: 560</p>
+          <p>Average Start: 10.75</p>
+          <p>Average Finish: 11.97</p>
+		</li>
+      </ul>
+    </div>
+    <div class="stats">
+      <ul>
+        <li>
+          <p>Wins: 0</p>
+          <p>Top 5's: 10</p>
+          <p>Top 10's: 17</p>
+          <p>Poles: 2</p>
+          <p>Laps Led: 358</p>
+          <p>Average Start: 11.33</p>
+          <p>Average Finish: 14.58</p>
+	    </li>
+        <li><h2>2016</h2></li>
+      </ul>
+    </div>
+    <div class="gallery">
+      <ul>
+        <li><h2>Career</h2>
+		  <img src="Images/win-stickers.jpg" width="300" height="163" alt="3 win stickers"/>
+		  <img src="Images/win-stickers.jpg" width="300" height="163" alt="3 win stickers"/></li>
+        <li>
+          
+          <p>Wins: 6</p>
+          <p>Top 5's: 44</p>
+          <p>Top 10's: 74</p>
+          <p>Poles: 8</p>
+          <p>Laps Led: 1,844</p>
+          <p>Average Start: 11.01</p>
+          <p>Average Finish: 13.49</p>
+	    </li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>Ray McNamara</p>
+    <p>COM 205 Fall 2019</p>
+    <p id = "date">Date</p>
+  </footer>
+</div>
+<script>
+window.onload = initDate;
+function initDate() {
+     var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
+     var monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+     var now = new Date();
+     var dtString = dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate();
+     document.getElementById("date"). innerHTML = dtString;
+}
+
+	
+	
+	
+	
+</script>
+</body>
+</html>
