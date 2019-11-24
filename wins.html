@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chase Elliott Wins Page</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="page-container">
+  <header><a href="index.html"><img src="Images/header.jpg" width="900" height="372" alt=""/></a></header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="wins.html">Wins</a></li>
+      <li><a href="stats.html">Stats</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Wins</h1>
+    <div class="content_container">
+	  <h2 id = "win-title">1. Watkins Glen 2018</h2>
+      <p><img id="win-image" src="Images/win1.jpg" width="450" height="245" alt="Chase Elliott Winning"/> </p>
+      <p id="win-des">Chase Elliott scored his first Victory at Watkins Glen in upstate New York. In his third season in the cup series, Elliott held off one of the sport's best in Martin Truex Jr. to secure his first win. Truex tailed Elliott lap after lap, however, Elliott was able to hold him off as Truex ran out of fuel on the last lap. Elliott finally captured his first win and then ran out of gas on the cool down lap. This allowed for a legendary moment where Jimmie Johnson pushed Chase Eliott back to the start/finish line in order to celebrate in front of his many fans.</p>
+      <button id ="prev" onclick = "prevWin()">Previous</button>
+	  <button id="next" onclick="nextWin()">Next</button>
+		
+    </div>
+   
+    
+    
+    
+          
+         
+  </main>
+  <footer>
+    <p>Ray McNamara</p>
+    <p>COM 205 Fall 2019</p>
+    <p id = "date">Date</p>
+  </footer>
+</div>
+<script>
+var count = 1;
+window.onload = initDate;
+function initDate() {
+     var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
+     var monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+     var now = new Date();
+     var dtString = dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate();
+     document.getElementById("date"). innerHTML = dtString;
+}
+
+function nextWin(){
+	count = count + 1;
+	if (count == 2){document.getElementById("win-image").src = "Images/win2.jpg";
+	document.getElementById("win-des").innerHTML = "Chase Elliott would fall behind early in this one due to a pit road penalty that set him back. All race long he gained back ground and eventually put himself in the top 3 in the closing laps. He did not have the time to catch the leaders, however, due to a timely caution and his competitors pitting, he gained the lead late. After two late restarts, Elliott crossed the line in first and was able to do a burnout for the first time in the cup series.";
+	document.getElementById("win-title").innerHTML = "2. Dover-2 2018";
+	document.getElementById("prev").style.visibility = "visible";				
+	}
+	else if(count == 3){document.getElementById("win-image").src = "Images/win3.jpg";
+	document.getElementById("win-des").innerHTML = "Elliott would start the weekend of this race with a lack luster qualifying performance, starting in just 13th. As the race went on it became clear that Elliott had one of the best cars. Elliott and Harvick were having a close battle when Harvick received a pit road penalty that took him out of the race. Elliott gained the lead and held it as Kyle Busch and Kyle Larson started to gain on him. Elliott held off both Busch and Larson to secure his third win.";
+	document.getElementById("win-title").innerHTML = "3. Kansas-2 2018";					
+					   
+	}
+	else if(count == 4){document.getElementById("win-image").src = "Images/win4.jpg";
+	document.getElementById("win-des").innerHTML = "Chase Elliott would earn his fourth win at the most unpredictable track in NASCAR. The cars run so close together that one small mistake from one driver can take out half of the field. All the Chevy's worked together in this race and on the last lap a few cars wrecked, leading to a caution which secured the win for Elliott.";
+	document.getElementById("win-title").innerHTML = "4. Talladega-1 2019";					
+					   
+	}
+	else if(count == 5){document.getElementById("win-image").src = "Images/win5.jpg";
+	document.getElementById("win-des").innerHTML = "Elliott would return to the site of his first win and start the weekend strong by dominating practice and grabbing the pole. He would continue this dominance during the race and go onto lead 80 of 90 laps. In the closing laps Truex was closing in on Elliott, however, Elliott raced perfectly and held him off to secure his fifth career win and second win of 2019.";
+	document.getElementById("win-title").innerHTML = "5. Watkins Glen 2019";					
+					   
+	}
+	else if(count == 6){document.getElementById("win-image").src = "Images/win6.jpg";
+	document.getElementById("win-des").innerHTML = "Elliott started this weekend off poorly when he spun in qualifying causing him to only start 19th. He worked his way up through the field and gained the lead and showed he had the best car. However, with 45 laps to go, Elliott overdrove turn 1 and locked up his brakes and crashed into the wall. He brought the car down pit road and had his crew tape up the hood. He then passed every single car on the race track and took over the lead again with 6 laps to go. Elliott managed to come back from a crash to end up securing his sixth career win and third win of 2019. Elliott proceeded to celebrate his comeback victory by doing a burnout in the wall he crashed into earlier.";
+	document.getElementById("win-title").innerHTML = "6. Charlotte Roval 2019";	
+	document.getElementById("next").style.display = "none";					
+					   
+	}
+}
+	function prevWin(){
+	count = count - 1;
+	if (count == 1){document.getElementById("win-image").src = "Images/win1.jpg";
+	document.getElementById("win-des").innerHTML = "Chase Elliott scored his first Victory at Watkins Glen in upstate New York. In his third season in the cup series, Elliott held off one of the sport's best in Martin Truex Jr. to secure his first win. Truex tailed Elliott lap after lap, however, Elliott was able to hold him off as Truex ran out of fuel on the last lap. Elliott finally captured his first win and then ran out of gas on the cool down lap. This allowed for a legendary moment where Jimmie Johnson pushed Chase Eliott back to the start/finish line in order to celebrate in front of his many fans.";
+	document.getElementById("win-title").innerHTML = "1. Watkins Glen 2018";
+	document.getElementById("prev").style.visibility = "hidden";					
+	}
+	else if(count == 2){document.getElementById("win-image").src = "Images/win2.jpg";
+	document.getElementById("win-des").innerHTML = "Chase Elliott would fall behind early in this one due to a pit road penalty that set him back. All race long he gained back ground and eventually put himself in the top 3 in the closing laps. He did not have the time to catch the leaders, however, due to a timely caution and his competitors pitting, he gained the lead late. After two late restarts, Elliott crossed the line in first and was able to do a burnout for the first time in the cup series.";
+	document.getElementById("win-title").innerHTML = "2. Dover-2 2018";					
+					   
+	}
+	else if(count == 3){document.getElementById("win-image").src = "Images/win3.jpg";
+	document.getElementById("win-des").innerHTML = "Elliott would start the weekend of this race with a lack luster qualifying performance, starting in just 13th. As the race went on it became clear that Elliott had one of the best cars. Elliott and Harvick were having a close battle when Harvick received a pit road penalty that took him out of the race. Elliott gained the lead and held it as Kyle Busch and Kyle Larson started to gain on him. Elliott held off both Busch and Larson to secure his third win.";
+	document.getElementById("win-title").innerHTML = "3. Kansas-2 2018";					
+					   
+	}
+	else if(count == 4){document.getElementById("win-image").src = "Images/win4.jpg";
+	document.getElementById("win-des").innerHTML = "Chase Elliott would earn his fourth win at the most unpredictable track in NASCAR. The cars run so close together that one small mistake from one driver can take out half of the field. All the Chevy's worked together in this race and on the last lap a few cars wrecked, leading to a caution which secured the win for Elliott.";
+	document.getElementById("win-title").innerHTML = "4. Talladega-1 2019";					
+					   
+	}
+	else if(count == 5){document.getElementById("win-image").src = "Images/win5.jpg";
+	document.getElementById("win-des").innerHTML = "Elliott would return to the site of his first win and start the weekend strong by dominating practice and grabbing the pole. He would continue this dominance during the race and go onto lead 80 of 90 laps. In the closing laps Truex was closing in on Elliott, however, Elliott raced perfectly and held him off to secure his fifth career win and second win of 2019.";
+	document.getElementById("win-title").innerHTML = "5. Watkins Glen 2019";
+	document.getElementById("next").style.display = "inline";					
+					   
+	}
+}
+	
+	
+	
+	
+</script>
+</body>
+</html>
