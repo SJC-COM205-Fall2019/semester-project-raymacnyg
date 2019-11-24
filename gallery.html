@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chase Elliott Stats Page</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="page-container">
+  <header><a href="index.html"><img src="Images/header.jpg" width="900" height="372" alt=""/></a></header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="wins.html">Wins</a></li>
+      <li><a href="stats.html">Stats</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Gallery</h1>
+    <div class="image_container">
+      <ul class = "images">
+        <li><img src="Images/napa1.jpg" alt="Napa Auto Parts Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/napa2.jpg" alt="Napa Brakes Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/napa3.jpg" alt="Napa Filters Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/mtndew1.jpg" alt="Mountain Dew Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/mtndew2.jpg" alt="Mountain Dew Baja Blast Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/mtndew3.jpg" alt="Mountain Dew/Little Caesar's Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/hoot.jpg" alt="Hooters Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/hoot2.jpg" alt="Hooters Breast Cancer Awareness Scheme" width="280" height="146" class="image-border"/></li>
+        <li><img src="Images/hoot3.jpg" alt="Hooters Spirits Scheme" width="280" height="146" class="image-border"/></li>
+      </ul>
+    </div>
+    
+    
+    
+  </main>
+  <footer>
+    <p>Ray McNamara</p>
+    <p>COM 205 Fall 2019</p>
+    <p id = "date">Date</p>
+  </footer>
+</div>
+<script>
+window.onload = initDate;
+function initDate() {
+     var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
+     var monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+     var now = new Date();
+     var dtString = dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate();
+     document.getElementById("date"). innerHTML = dtString;
+}
+
+	
+	
+	
+	
+</script>
+</body>
+</html>
